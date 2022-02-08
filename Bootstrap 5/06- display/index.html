@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>BS5</title>
 </head>
 <style>
-    body{
+    body {
         padding: 10px 20px;
         width: 80%;
         margin: auto;
     }
-    h1{
-        text-align:center;
+
+    h1 {
+        text-align: center;
     }
 </style>
+
 <body>
-        <!-- 
+    <!-- 
         * Breakpoint	Class infix	   Dimensions
         * X-Small	        None	     <576px    .. Bootstrap .. Mobile First
         * Small	            sm	         ≥576px
@@ -27,18 +31,33 @@
         * Extra large	    xl	         ≥1200px
         * Extra extra large	xxl	         ≥1400px
      -->
-        <h1> Display </h1>
-        <p class="bg-primary text-light text-center p-4 d-flex">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nisi?
-        </p>
-        
-        
-        <p class="bg-primary text-light text-center p-4 d-grid">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nisi?
-        </p>
+    <h1> Display </h1>
+    <p class="bg-primary text-light text-center p-4 d-flex">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nisi?
+    </p>
 
 
+    <p class="bg-primary text-light text-center p-4 d-grid">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nisi?
+    </p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <hr>
+
+    <!--* From sm break point to largest screen  -->
+    <p class="bg-primary text-light text-center p-4 d-sm-flex">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nisi?
+    </p>
+
+
+    <!-- * (flex) at small screens ... from md to largest screen (none) -->
+    <p class="bg-primary text-light text-center p-4 d-sm-flex d-md-none">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, nisi?
+    </p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
