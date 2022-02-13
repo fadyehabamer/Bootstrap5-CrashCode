@@ -13,11 +13,28 @@
     h1 {
         text-align: center;
     }
+    .parent{
+        height:400px;
+    }
+    .child{
+        width:400px;
+        height:100px
+    }
 </style>
 
 <body>
-  
+    <h1 class="text-primary">
+        Flex Box
+    </h1>    
+    <hr/>
     
+    <div class="parent bg-primary d-flex" >
+        <div class="child bg-danger"></div>
+        <div class="child bg-info"></div>
+        <div class="child bg-success"></div>
+
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
