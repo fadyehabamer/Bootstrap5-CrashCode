@@ -10,6 +10,9 @@
     <title>BS5</title>
 </head>
 <style>
+    *{
+        text-align:center;
+    }
     h1 {
         text-align: center;
     }
@@ -23,9 +26,10 @@
         height: 100px
     }
 
-    span {
+    span,.four {
         padding: 5px;
         background-color: #eee;
+        
     }
 </style>
 
@@ -82,8 +86,8 @@
     </h1>
     <hr>
     <br>
-    <div class="container">
-        <div class="row spans">
+    <div class="container ">
+        <div class="row spans ">
             <span class="col-1">span 12 </span>
             <span class="col-1">span 12 </span>
             <span class="col-1">span 12 </span>
@@ -99,10 +103,17 @@
         </div>
         <br>
         <div class="row">
-
+            <div class="four col-4">DIV 4</div>
+            <div class="four col-4">DIV 4</div>
+            <div class="four col-4">DIV 4</div>
         </div>
         <br>
-        
+        <div class="row">
+            <div class="col-8">col-8</div>
+            <div class="col-4">col-4</div>
+          </div>
+        <br>
+
     </div>
 
    
