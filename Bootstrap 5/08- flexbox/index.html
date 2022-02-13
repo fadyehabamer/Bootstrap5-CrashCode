@@ -13,22 +13,24 @@
     h1 {
         text-align: center;
     }
-    .parent{
-        height:400px;
+
+    .parent {
+        height: 400px;
     }
-    .child{
-        width:400px;
-        height:100px
+
+    .child {
+        width: 400px;
+        height: 100px
     }
 </style>
 
 <body>
     <h1 class="text-primary">
         Flex Box
-    </h1>    
-    <hr/>
-    
-    <div class="parent bg-primary d-flex flex-nowrap" >
+    </h1>
+    <hr />
+
+    <div class="parent bg-primary d-flex flex-nowrap">
         <div class="child bg-danger"></div>
         <div class="child bg-info"></div>
         <div class="child bg-success"></div>
@@ -37,20 +39,36 @@
     <br>
     <br>
 
-    <h1  class="text-primary">
+    <h1 class="text-primary">
         FlexBox with Break Point
     </h1>
 
     <hr>
 
-    <div class="parent bg-primary d-flex flex-md-column " >
+    <div class="parent bg-primary d-flex flex-md-column ">
         <div class="child bg-danger mx-auto"></div>
         <div class="child bg-info mx-auto"></div>
         <div class="child bg-success mx-auto"></div>
     </div>
-    
+
     <br>
     <br>
+
+
+    <h1 class="text-primary">
+        justify Content X-axis
+        <br>
+        Align Items Y-axis
+    </div>
+    </h1>
+    </h1>
+
+    <hr>
+    <div class="parent bg-primary d-flex justify-content-evenly align-items-center ">
+        <div class="child bg-danger "></div>
+        <div class="child bg-info "></div>
+        <div class="child bg-success "></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
