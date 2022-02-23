@@ -13,11 +13,19 @@
 <style>
     .navbar-collapse {
         position: absolute;
-        background: red;
+        background:#212529;
         width: 100%;
         height: calc(100vh - 56px);
         right: 0;
+        top: 56px;
+        transition: 0.3s;
+        clip-path: circle(110% at 100% 0); 
+        visibility:visible
     }
+     .navbar-collapse .show {
+        clip-path: circle(0% at 100% 0);
+        visibility:hidden;
+    } 
 </style>
 
 <body>
@@ -33,7 +41,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse text-center" id="navLinks">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="">Home</a>
                     </li>
