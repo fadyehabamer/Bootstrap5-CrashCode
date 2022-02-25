@@ -10,9 +10,14 @@
     <title>BS5</title>
 </head>
 
+<style>
+    form{
+        width: 500px;
+    }
+</style>
 <body>
 
-    <form action="" method="post" class="mx-auto shadow p-4 needs-validation" novalidate>
+    <form method="post" class="mx-auto mt-5 shadow p-4 needs-validation" novalidate>
         <div class="row">
             <div class="pb-2 col-6">
                 <label class="form-label" for="">First Name</label>
@@ -23,35 +28,37 @@
             </div>
             <div class="pb-2 col-6">
                 <label class="form-label" for="">Last Name</label>
-                <input class="form-control" type="text" placeholder="" id="">
+                <input class="form-control" required type="text" placeholder="" id="">
             </div>
         </div>
         <div class="pb-2">
             <label class="form-label" for="">Email</label>
-            <input class="form-control" type="email" placeholder="" id="">
+            <input class="form-control" required type="email" placeholder="" id="">
         </div>
         <div class="pb-2">
             <label class="form-label" for="">Upload Photo</label>
-            <input type="file" class="form-control" placeholder="" id="">
+            <input type="file" class="form-control" required placeholder="" id="">
         </div>
         <div class="pb-2">
             <label class="form-label" for="">Gender</label>
-            <select class="form-select" name="" id="">
+            <select class="form-select"  required name="" id="">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
         </div>
         <div class="form-check form-switch pb-2">
-            <input type="checkbox" name="" id="" class="form-check-input">
+            <input type="checkbox" required name="" id="" class="form-check-input">
             <label for="" class="form-check-label">
                 accept Terms &amp; Conditions
             </label>
         </div>
         <button type="submit" class="btn btn-dark">Submit</button>
     </form>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+
     <script>
         let form = document.querySelector(".needs-validation");
         form.addEventListener("submit", (event) => {
